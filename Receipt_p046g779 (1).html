@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+  <title>Receipt RCT-G779</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',Arial,sans-serif;background:#0f1117;color:#e2e8f0;padding:2rem;}
+    .receipt{max-width:520px;margin:0 auto;background:#161b27;border:1px solid #1e2535;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.12);}
+    .header{background:linear-gradient(135deg,#0070f3,#00c2ff);color:#fff;padding:1.5rem 1.75rem;text-align:center;}
+    .header h1{font-size:1.4rem;font-weight:800;letter-spacing:.02em;}
+    .header p{font-size:.8rem;opacity:.85;margin-top:.2rem;}
+    .header .rno{display:inline-block;background:rgba(255,255,255,.2);padding:.3rem .9rem;border-radius:20px;font-size:.8rem;margin-top:.7rem;font-weight:700;letter-spacing:.06em;}
+    .stamp{display:flex;align-items:center;justify-content:center;gap:1rem;padding:1.25rem 1.75rem;border-bottom:2px dashed #1e2535;background:rgba(34,197,94,.06);}
+    .stamp .amount{font-size:2rem;font-weight:800;color:#22c55e;}
+    .stamp .approved{font-size:.78rem;color:#22c55e;font-weight:700;text-align:center;}
+    .section{padding:1.1rem 1.75rem;border-bottom:1px solid #1e2535;}
+    .section-title{font-size:.7rem;font-weight:700;letter-spacing:.1em;color:#00c2ff;margin-bottom:.65rem;text-transform:uppercase;}
+    .row{display:flex;justify-content:space-between;align-items:center;padding:.32rem 0;font-size:.83rem;}
+    .row .lbl{color:#94a3b8;}
+    .row .val{font-weight:600;text-align:right;}
+    .row .val.mono{font-family:monospace;font-size:.82rem;color:#00c2ff;}
+    .reading-box{background:rgba(0,194,255,.06);border:1px solid #1e2535;border-radius:8px;padding:.85rem;margin:.4rem 0;}
+    .reading-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;text-align:center;}
+    .reading-grid .rg-label{font-size:.68rem;color:#94a3b8;margin-bottom:.2rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;}
+    .reading-grid .rg-val{font-size:1.1rem;font-weight:800;font-family:monospace;color:#e2e8f0;}
+    .reading-grid .rg-val.highlight{color:#00c2ff;}
+    .divider{height:1px;background:#1e2535;margin:.2rem 0;}
+    .charge-row{display:flex;justify-content:space-between;align-items:center;padding:.3rem 0;font-size:.83rem;}
+    .charge-row .lbl{color:#94a3b8;}
+    .charge-row .val{font-weight:600;}
+    .total-row{display:flex;justify-content:space-between;align-items:center;padding:.6rem 0;font-size:1rem;font-weight:800;color:#00c2ff;border-top:2px solid #1e2535;margin-top:.3rem;}
+    .paid-row{display:flex;justify-content:space-between;padding:.35rem 0;font-size:.85rem;color:#22c55e;font-weight:700;}
+    .balance-row{display:flex;justify-content:space-between;padding:.35rem 0;font-size:.85rem;font-weight:700;}
+    .footer{background:rgba(0,194,255,.04);padding:1rem 1.75rem;text-align:center;}
+    .footer .logo{font-weight:800;color:#00c2ff;font-size:.9rem;}
+    .footer p{font-size:.73rem;color:#94a3b8;line-height:1.7;margin-top:.2rem;}
+    @media print{body{padding:0;}@page{margin:.5cm;}}</style>
+  </head><body>
+  <div class="receipt">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>H2O Water Limited</h1>
+      <p>Clean Water for Every Home</p>
+      <div class="rno">RECEIPT # RCT-G779</div>
+    </div>
+
+    <!-- PAYMENT STAMP -->
+    <div class="stamp">
+      <div>
+        <div class="amount">KES 500</div>
+        <div class="approved">✅ Payment Approved & Confirmed</div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER DETAILS -->
+    <div class="section">
+      <div class="section-title">Customer Details</div>
+      <div class="row"><span class="lbl">Name</span><span class="val">James</span></div>
+      <div class="row"><span class="lbl">Meter Number</span><span class="val mono">MTR-001</span></div>
+      <div class="row"><span class="lbl">Phone</span><span class="val">0715220338</span></div>
+      <div class="row"><span class="lbl">Area / Zone</span><span class="val">KILI</span></div>
+      <div class="row"><span class="lbl">Customer Type</span><span class="val">Residential</span></div>
+    </div>
+
+    <!-- METER READINGS -->
+    <div class="section">
+      <div class="section-title">Meter Readings — May 2026</div>
+      <div class="reading-box">
+        <div class="reading-grid">
+          <div>
+            <div class="rg-label">Previous</div>
+            <div class="rg-val">—</div>
+          </div>
+          <div>
+            <div class="rg-label">Current</div>
+            <div class="rg-val highlight">—</div>
+          </div>
+          <div>
+            <div class="rg-label">Units Used</div>
+            <div class="rg-val highlight">5 m³</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- BILL BREAKDOWN -->
+    <div class="section">
+      <div class="section-title">Bill Breakdown</div>
+      <div class="charge-row"><span class="lbl">Water Charge (5 m³ × KES 150/m³)</span><span class="val">KES 750</span></div>
+      <div class="charge-row"><span class="lbl">Monthly Standing Charge</span><span class="val">KES 200</span></div>
+      
+      
+      
+      
+      
+      <div class="total-row"><span>TOTAL BILLED</span><span>KES 950</span></div>
+    </div>
+
+    <!-- PAYMENT SUMMARY -->
+    <div class="section">
+      <div class="section-title">Payment Details</div>
+      <div class="row"><span class="lbl">Invoice No.</span><span class="val mono">INV-4566</span></div>
+      <div class="row"><span class="lbl">Billing Period</span><span class="val">May 2026</span></div>
+      <div class="row"><span class="lbl">Due Date</span><span class="val">15 May 2026</span></div>
+      <div class="row"><span class="lbl">Payment Date</span><span class="val">19 May 2026</span></div>
+      <div class="row"><span class="lbl">Payment Method</span><span class="val">M-Pesa</span></div>
+      <div class="row"><span class="lbl">Transaction Ref.</span><span class="val mono">PMT620693</span></div>
+      <div class="row"><span class="lbl">Approved By</span><span class="val">Admin</span></div>
+      <div class="divider"></div>
+      <div class="paid-row"><span>Amount Paid</span><span>KES 500</span></div>
+      <div class="balance-row" style="color:#ef4444;">
+        <span>Remaining Balance</span><span>KES 450</span>
+      </div>
+      
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="logo">H2O Water Limited</div>
+      <p>Westlands Commercial Centre, Nairobi · 0700 123 456</p>
+      <p>info@h2owater.co.ke</p>
+      <p>M-Pesa Paybill: <strong>891234</strong></p>
+      <p>Thank you for your payment. Please retain this receipt.<br>Generated: 19/05/2026, 16:42:10</p>
+    </div>
+  </div>
+  </body></html>
