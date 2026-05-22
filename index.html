@@ -527,12 +527,12 @@ footer{background:#1a0405;padding:52px 0 22px}
     <div class="nav-brand-loc">5-Star · Kitengela, Nairobi</div>
   </div>
   <ul class="nav-links">
-    <li><a href="#rooms">Rooms</a></li>
-    <li><a href="#dining">Dining</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#tourism">Explore</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('rooms')">Rooms</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('dining')">Dining</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('events')">Events</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('gallery')">Gallery</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('tourism')">Explore</a></li>
+    <li><a href="javascript:void(0)" onclick="scrollTo_('contact')">Contact</a></li>
   </ul>
   <div class="nav-actions">
     <a href="https://wa.me/254795952689" class="nav-wa-btn" target="_blank" rel="noopener" title="WhatsApp">
@@ -543,13 +543,13 @@ footer{background:#1a0405;padding:52px 0 22px}
   </div>
 </nav>
 <div class="mob-menu" id="mobMenu">
-  <a href="#rooms" onclick="closeMob()">Rooms &amp; Suites</a>
-  <a href="#dining" onclick="closeMob()">Restaurant &amp; Bar</a>
-  <a href="#events" onclick="closeMob()">Events &amp; Conferences</a>
-  <a href="#gallery" onclick="closeMob()">Gallery</a>
-  <a href="#tourism" onclick="closeMob()">Local Experiences</a>
-  <a href="#contact" onclick="closeMob()">Contact Us</a>
-  <a href="https://wa.me/254795952689" target="_blank" rel="noopener" style="color:#25d366">&#128241; WhatsApp: 0795 952 689</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('rooms')">Rooms &amp; Suites</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('dining')">Restaurant &amp; Bar</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('events')">Events &amp; Conferences</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('gallery')">Gallery</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('tourism')">Local Experiences</a>
+  <a href="javascript:void(0)" onclick="scrollTo_('contact')">Contact Us</a>
+  <a href="https://wa.me/254795952689" target="_blank" rel="noopener" style="color:#25d366" onclick="closeMob()">&#128241; WhatsApp: 0795 952 689</a>
 </div>
 
 <!-- HERO -->
@@ -571,7 +571,7 @@ footer{background:#1a0405;padding:52px 0 22px}
     <p class="hero-sub">A tranquil 5-star retreat in Kitengela with lush gardens, private balcony rooms, free Wi-Fi, restaurant, bar, and free parking — minutes from Nairobi's finest attractions.</p>
     <div class="hero-ctas">
       <button class="btn btn-red" onclick="scrollToBooking()">Reserve Your Stay</button>
-      <button class="btn btn-white" onclick="smoothTo('#rooms')">Explore Rooms</button>
+      <button class="btn btn-white" onclick="scrollTo_('rooms')">Explore Rooms</button>
       <a href="https://wa.me/254795952689" class="btn btn-wa" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp Us
@@ -979,25 +979,25 @@ footer{background:#1a0405;padding:52px 0 22px}
       <div>
         <div class="ft-col-title">Quick Links</div>
         <div class="ft-links">
-          <a href="#home">Home</a>
-          <a href="#rooms">Rooms &amp; Suites</a>
-          <a href="#dining">Restaurant &amp; Bar</a>
-          <a href="#events">Events &amp; Conferences</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#tourism">Local Experiences</a>
-          <a href="#contact">Contact Us</a>
+          <a href="javascript:void(0)" onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('rooms')">Rooms &amp; Suites</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('dining')">Restaurant &amp; Bar</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('events')">Events &amp; Conferences</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('gallery')">Gallery</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('tourism')">Local Experiences</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('contact')">Contact Us</a>
         </div>
       </div>
       <div>
         <div class="ft-col-title">Services</div>
         <div class="ft-links">
-          <a href="#rooms">Room Booking</a>
-          <a href="#dining">Table Reservation</a>
-          <a href="#events">Event Planning</a>
-          <a href="#tourism">Airport Transfers</a>
-          <a href="#tourism">Safari Packages</a>
-          <a href="#why">Free Parking</a>
-          <a href="#events">Conference Hire</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('rooms')">Room Booking</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('dining')">Table Reservation</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('events')">Event Planning</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('tourism')">Airport Transfers</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('tourism')">Safari Packages</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('why')">Free Parking</a>
+          <a href="javascript:void(0)" onclick="scrollTo_('events')">Conference Hire</a>
         </div>
       </div>
       <div>
@@ -1013,9 +1013,9 @@ footer{background:#1a0405;padding:52px 0 22px}
     <div class="ft-bottom">
       <div class="ft-copy">&copy; 2025 Four Wheels Gardens Hotel &amp; Accommodation. All rights reserved.</div>
       <div class="ft-pol">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
-        <a href="#">Cancellation Policy</a>
+        <a href="javascript:void(0)">Privacy Policy</a>
+        <a href="javascript:void(0)">Terms &amp; Conditions</a>
+        <a href="javascript:void(0)">Cancellation Policy</a>
       </div>
     </div>
   </div>
@@ -1850,13 +1850,21 @@ _hbg.addEventListener('click',function(){
 function closeMob(){_mm.classList.remove('open');_hbg.classList.remove('open');_hbg.setAttribute('aria-expanded','false');}
 
 // ── SMOOTH SCROLL ──
-function scrollToBooking(){var e=document.getElementById('bookingStrip');if(e)e.scrollIntoView({behavior:'smooth'});}
-document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click',function(e){
-    var h=a.getAttribute('href');
-    if(!h||h==='#'){e.preventDefault();return;}
-    try{var t=document.querySelector(h);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});closeMob();}}catch(er){}
-  });
+function scrollTo_(id){
+  try{
+    var t=document.getElementById(id);
+    if(t){t.scrollIntoView({behavior:'smooth'});closeMob();}
+  }catch(er){}
+}
+function scrollToBooking(){
+  try{
+    var e=document.getElementById('bookingStrip');
+    if(e)e.scrollIntoView({behavior:'smooth'});
+  }catch(er){}
+}
+// Only intercept pure # links (bare hash) — let javascript:void(0) links pass through
+document.querySelectorAll('a[href="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault();});
 });
 
 // ── EXP TAGS ──
